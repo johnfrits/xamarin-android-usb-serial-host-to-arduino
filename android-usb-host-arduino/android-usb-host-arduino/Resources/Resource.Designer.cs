@@ -61,7 +61,10 @@ namespace android_usb_host_arduino
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int seekBar1 = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int toggleButton1 = 2131034113;
 			
 			static Id()
 			{

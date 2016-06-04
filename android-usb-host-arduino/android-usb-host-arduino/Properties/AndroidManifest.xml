@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="android_usb_host_arduino.android_usb_host_arduino" android:versionCode="1" android:versionName="1.0">
   <uses-sdk android:minSdkVersion="16" />
-  <application android:label="android_usb_host_arduino"></application>
+  <application android:label="android_usb_host_arduino" android:allowBackup="true" android:supportsRtl="true" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+        </activity>
+    </application>
 </manifest>
